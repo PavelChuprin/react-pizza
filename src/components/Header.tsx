@@ -7,13 +7,14 @@ import { Search } from "./index";
 import React from "react";
 import { Affix } from "antd";
 import { ShoppingCartOutlined } from "@ant-design/icons";
+import { CartItem } from "../redux/cart/types";
 
 export const Header: React.FC = () => {
   const location = useLocation();
   const isMounted = React.useRef(false);
   const { totalPrice, items } = useSelector(selectCart);
 
-  const totalCount = items.reduce((sum: number, item: any) => {
+  const totalCount = items.reduce((sum: number, item: CartItem) => {
     return item.count + sum;
   }, 0);
 

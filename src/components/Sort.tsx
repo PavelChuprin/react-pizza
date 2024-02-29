@@ -2,7 +2,6 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { Sort as SortType, SortPropertyEnum } from "../redux/filter/types";
 import { setSort } from "../redux/filter/slice";
-import { ShoppingCartOutlined } from "@ant-design/icons";
 
 type TPopupClick = MouseEvent & {
   composedPath(): Node[];

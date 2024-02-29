@@ -7,6 +7,7 @@ import { selectCart } from "../redux/cart/selectors";
 import { clearItems } from "../redux/cart/slice";
 import { Result } from "antd";
 import { LoadingOutlined } from "@ant-design/icons";
+import { CartItem as TCartItem } from "../redux/cart/types";
 
 const Cart: React.FC = () => {
   const dispatch = useDispatch();
@@ -14,7 +15,7 @@ const Cart: React.FC = () => {
   const [orderPain, setOrderPain] = React.useState(false);
   const [isLoading, setIsLoading] = React.useState(false);
 
-  const totalCount = items.reduce((sum: number, item: any) => {
+  const totalCount = items.reduce((sum: number, item: TCartItem) => {
     return item.count + sum;
   }, 0);
 
