@@ -1,7 +1,5 @@
 # React-Pizza
 
-<img src="assets/img/pizza-logo.svg" width="80" height="80">
-
 **React-Pizza** - самая вкусная пицца во вселенной.
 
 [Источник](https://www.youtube.com/playlist?list=PL0FGkDGJQjJFMRmP7wZ771m1Nx-m2_qXq)
