@@ -1,20 +1,18 @@
-@import '../variables';
+@import "../variables";
 
 .header {
   border-bottom: 1px solid $gray-line;
-  padding: 40px 0;
+  padding-top: 40px;
 
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 20px;
 
-    @media (max-width: 645px) {
-    flex-direction: column;
-    
-    .header__cart {
-      margin-top: 20px;
-    }
+    @media (max-width: 1120px) {
+      flex-direction: column;
+      gap: 20px;
     }
   }
 

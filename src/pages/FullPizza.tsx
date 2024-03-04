@@ -51,8 +51,6 @@ const FullPizza: React.FC = () => {
             className="content__item-img"
             src={pizza.imageUrl}
             alt={`Фото питсы: ${pizza.imageUrl}`}
-            width={400}
-            height={400}
           />
         </Watermark>
 
